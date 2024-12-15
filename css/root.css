@@ -1,0 +1,15 @@
+:root {
+  /* COLORS */
+  --color-dark-black: #000000;
+  --color-yellow: #f4d04e;
+  --color-black: #111111;
+  --color-grey: #7f7f7f;
+  --color-white: #ffffff;
+
+  /* FONTS */
+  --font-family: "Figtree", sans-serif;
+  --small-fs: 14px;
+  --font-lh: 1.5;
+  --medium-fs: 16px;
+  --big-fs: 24px;
+}

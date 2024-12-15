@@ -1,0 +1,136 @@
+@import "./root.css";
+
+@font-face {
+  font-display: swap;
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/figtree-v6-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/figtree-v6-latin-800.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 62.5%;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+body {
+  font-family: var(--font-family);
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-yellow);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#card-block {
+  border: 1px solid var(--color-black);
+  gap: 24px;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: var(--color-white);
+  width: 100%;
+  max-width: 384px;
+  box-shadow: 8px 8px 0px 0px var(--color-dark-black);
+}
+
+.header-container {
+  margin-bottom: 2.4rem;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.card__links {
+  max-width: 33.6rem;
+  max-height: 19.4rem;
+  gap: 12px;
+}
+
+.card__links__link {
+  width: 8.2rem;
+  height: 2.9rem;
+  padding: 4px 12px 4px 12px;
+  gap: 8px;
+  border-radius: 4px;
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+  font-size: var(--small-fs);
+  line-height: var(--font-lh);
+  text-align: center;
+}
+
+.card__link__text {
+  font-size: var(--small-fs);
+  line-height: var(--font-lh);
+  color: var(--color-black);
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.card__links__text {
+  font-size: var(--big-fs);
+  line-height: var(--font-lh);
+  color: var(--color-black);
+  margin-bottom: 1.2rem;
+}
+
+.card__links__text:active {
+  color: var(--color-yellow);
+}
+
+.card__subtitle {
+  font-size: var(--medium-fs);
+  line-height: var(--font-lh);
+  color: var(--color-grey);
+  margin-bottom: 2.4rem;
+}
+
+.card__button {
+  max-width: 13rem;
+  max-height: 3.2rem;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+.card__hero {
+  font-size: var(--small-fs);
+  line-height: var(--font-lh);
+  color: var(--color-black);
+}
